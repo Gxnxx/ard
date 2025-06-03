@@ -101,7 +101,7 @@ local function renderInventory()
 			local muzzle = item:FindFirstChild("AttachmentMuzzle")
 			local reticle = item:FindFirstChild("AttachmentReticle")
 
-			local line = {slot and slot.Value or "?"} -> {name} [{mag and mag.Value or "--"}/{res and res.Value or "--"}] [{muzzle and muzzle.Value or "--"}/{reticle and reticle.Value or "--"}]
+			local line = `{slot and slot.Value or "?"} -> {name} [{mag and mag.Value or "--"}/{res and res.Value or "--"}] [{muzzle and muzzle.Value or "--"}/{reticle and reticle.Value or "--"}]`
 
 			local text = getDrawingText(index)
 			text.Text = line
